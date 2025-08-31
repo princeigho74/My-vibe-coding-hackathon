@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dream-to-App Generator — SDG 2: Zero Hunger (Nigeria)</title>
+  <meta name="description" content="Vibe Coding Hackathon entry — Dream-to-App Generator (SDG2 Zero Hunger). Deploy on GitHub Pages." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <h1>Dream-to-App Generator — SDG 2: Zero Hunger</h1>
+      <p class="tag">Case study: Nigeria • Deploy: GitHub Pages</p>
+      <a class="btn" href="#areas">View Focus Areas</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="about" class="card">
+      <h2>1. Harnessing AI & Low-Code for Impact</h2>
+      <p>
+        Convert text ideas into small, deployable apps that address <strong>SDG 2 (Zero Hunger)</strong>
+        in Nigeria. This static demo is fully deployable on GitHub Pages; sensitive calls (payments, real AI keys)
+        should be handled by a secure backend.
+      </p>
+    </section>
+
+    <section id="areas" class="card">
+      <h2>2. Areas the Hackathon is focusing on</h2>
+      <div class="areas">
+        <article class="area">
+          <h3>AI Study Buddy — Flashcards (Education spin)</h3>
+          <p>Generate study flashcards from notes (frontend-only demo or call an API from backend).</p>
+          <ul class="stack">
+            <li><strong>Frontend:</strong> HTML5 / CSS / JS</li>
+            <li><strong>Backend (opt):</strong> Flask (Render) / Node (Render)</li>
+            <li><strong>AI:</strong> Hugging Face Q&A (server-side)</li>
+          </ul>
+        </article>
+
+        <article class="area">
+          <h3>Farm-to-Table (Primary SDG2 focus)</h3>
+          <p>Connect farmers with buyers to reduce waste and improve incomes.</p>
+          <ul class="stack">
+            <li><strong>Frontend:</strong> HTML / JS listings</li>
+            <li><strong>Backend (opt):</strong> Flask / Node for orders & secure payments</li>
+            <li><strong>Payments:</strong> IntaSend (backend integration)</li>
+          </ul>
+        </article>
+
+        <article class="area">
+          <h3>Nutrition Coach (Low-cost meals)</h3>
+          <p>Suggest affordable meal plans using local staples (cassava, rice, maize).</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="how" class="card">
+      <h2>How it Works — Quick Demo</h2>
+      <p>Type a short idea or use-case and generate a ready-to-paste mini brief for your README/pitch deck.</p>
+      <form id="ideaForm" class="idea">
+        <textarea id="idea" rows="4" placeholder="e.g., Connect smallholder farmers in Kano with school canteens for weekly bulk orders"></textarea>
+        <button class="btn" type="submit">Generate Brief</button>
+      </form>
+      <pre id="output" class="output" aria-live="polite">Enter an idea and click "Generate Brief".</pre>
+    </section>
+
+    <section id="monetization" class="card">
+      <h2>4. Monetization with IntaSend</h2>
+      <p>
+        IntaSend is recommended for African markets — it handles local payments and scales with growth.
+        This demo simulates a checkout flow client-side; in production, implement IntaSend server-side.
+      </p>
+      <div class="inline-note">Note: Do NOT place real keys in frontend code. Use a backend to create/checkout payments securely.</div>
+      <button class="btn ghost" id="intasendBtn" type="button">Simulate IntaSend Checkout</button>
+      <div id="payStatus" class="muted"></div>
+    </section>
+
+    <section id="tools" class="card">
+      <h2>6. Tools (table)</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Category</th><th>Tool</th><th>Purpose</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Frontend</td><td>HTML/CSS/JS</td><td>Static UI deployable to GitHub Pages</td></tr>
+            <tr><td>Styling</td><td>Vanilla CSS</td><td>No build step</td></tr>
+            <tr><td>Backend (opt)</td><td>Flask / Node</td><td>APIs, DB, secure keys</td></tr>
+            <tr><td>Database</td><td>MySQL / SQLite</td><td>Store listings, orders</td></tr>
+            <tr><td>AI</td><td>Hugging Face / OpenAI</td><td>Text Q&A, suggestions (server-side)</td></tr>
+            <tr><td>Payments</td><td>IntaSend</td><td>Monetize in African markets</td></tr>
+            <tr><td>Deploy</td><td>GitHub Pages / Render</td><td>Frontend + optional backend</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="judging" class="card">
+      <h2>7. Judging Criteria</h2>
+      <ul>
+        <li><strong>Creativity</strong> — originality of approach</li>
+        <li><strong>Design</strong> — clarity, accessibility, presentation</li>
+        <li><strong>Prototyping</strong> — working demo & feasibility</li>
+      </ul>
+    </section>
+
+    <section id="pitch-judging" class="card">
+      <h2>8. Pitch Judging Criteria</h2>
+      <ul>
+        <li><strong>Problem Clarity</strong> — how well the issue is defined for Nigeria</li>
+        <li><strong>Solution Quality</strong> — realistic, impactful, and demoable</li>
+      </ul>
+    </section>
+
+    <section id="submission" class="card">
+      <h2>9. Submission Essentials</h2>
+      <ol>
+        <li><strong>GitHub Repository:</strong> push your code publicly</li>
+        <li><strong>Pitch Deck:</strong> include a short PDF (`deck.pdf`) in repo</li>
+        <li><strong>Deployment Link:</strong> enable GitHub Pages and include the live URL</li>
+        <li><strong>Video Demo (optional):</strong> < 2 minutes showing the happy path</li>
+      </ol>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Organizer</h2>
+      <p><strong>Happy Igho Umukoro</strong> — Vibe Coding Hackathon</p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <small>© 2025 Vibe Coding — Dream-to-App Generator • SDG 2 Nigeria</small>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
